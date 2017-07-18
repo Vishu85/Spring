@@ -1,12 +1,23 @@
 group 'io.world.springbootstartere2e'
 version '1.0-SNAPSHOT'
 
+buildscript {
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.4.2.RELEASE")
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
+
 
 
 
 
 apply plugin: 'java'
 apply plugin: 'idea'
+apply plugin: 'spring-boot'
 //apply plugin: 'io.spring.dependency-management'
 
 sourceCompatibility = 1.8
